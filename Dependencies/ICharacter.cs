@@ -8,6 +8,5 @@ namespace web_api_simpsons.Dependencies
         List<Character> GetCharacterList();
 
         Character GetCharacter(int id);
-        
     }
 }
