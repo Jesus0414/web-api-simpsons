@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Cors;
 
 namespace web_api_simpsons.Controllers
 {
-    [Route("[controller]")]
+    [Route("simpsons/[controller]")]
     [ApiController]
     [EnableCors("AllowOrigin")]
 
