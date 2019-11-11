@@ -54,7 +54,28 @@ namespace web_api_simpsons.Controllers
         [HttpGet("{id}")]
         public Character GetCharacter(int id)
         {
-            return characterList[id];
+            Character character = new Character();
+
+            SqlConnection conn = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand($"select * from tbl_character where id = {id}", conn);
+            conn.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while(reader.Read())
+            {
+                character = new Character
+                {
+                    Id = reader.GetInt64(reader.GetOrdinal("id")),
+                    FirstName = reader.GetString(reader.GetOrdinal("firstname")),
+                    SecondName = reader.GetString(reader.GetOrdinal("secondname")),
+                    LastName = reader.GetString(reader.GetOrdinal("lastname")),
+                    Age = reader.GetInt32(reader.GetOrdinal("age")),
+                    Description = reader.GetString(reader.GetOrdinal("descp")),
+                    Photo = reader.GetString(reader.GetOrdinal("photo"))
+                };
+            }
+            conn.Close();
+
+            return character;
         }
 
         [HttpGet]
@@ -75,7 +96,8 @@ namespace web_api_simpsons.Controllers
                     SecondName = reader.GetString(reader.GetOrdinal("secondname")),
                     LastName = reader.GetString(reader.GetOrdinal("lastname")),
                     Age = reader.GetInt32(reader.GetOrdinal("age")),
-                    Description = reader.GetString(reader.GetOrdinal("descp"))
+                    Description = reader.GetString(reader.GetOrdinal("descp")),
+                    Photo = reader.GetString(reader.GetOrdinal("photo"))
                 };
                 characters.Add(character);
             }

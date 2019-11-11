@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jesus\\documents\\web-api-simpsons\\web-api-simpsons.csproj": {}
+    "C:\\Users\\Jesus\\Documents\\XYZ\\web-api-simpsons\\web-api-simpsons.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jesus\\documents\\web-api-simpsons\\web-api-simpsons.csproj": {
+    "C:\\Users\\Jesus\\Documents\\XYZ\\web-api-simpsons\\web-api-simpsons.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jesus\\documents\\web-api-simpsons\\web-api-simpsons.csproj",
+        "projectUniqueName": "C:\\Users\\Jesus\\Documents\\XYZ\\web-api-simpsons\\web-api-simpsons.csproj",
         "projectName": "web-api-simpsons",
-        "projectPath": "C:\\Users\\Jesus\\documents\\web-api-simpsons\\web-api-simpsons.csproj",
+        "projectPath": "C:\\Users\\Jesus\\Documents\\XYZ\\web-api-simpsons\\web-api-simpsons.csproj",
         "packagesPath": "C:\\Users\\Jesus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jesus\\documents\\web-api-simpsons\\obj\\",
+        "outputPath": "C:\\Users\\Jesus\\Documents\\XYZ\\web-api-simpsons\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
